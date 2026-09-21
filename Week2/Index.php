@@ -29,7 +29,7 @@ if ($age >= 18) {
 // Switch
 $marks = 100;
 
-switch (true) {
+switch ($marks) {
     case ($marks >= 90):
         echo "You Get A<br>";
         break;
