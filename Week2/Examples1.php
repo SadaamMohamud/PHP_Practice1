@@ -9,8 +9,6 @@
     <?php
     //Php Tags
 
-
-
 // Constant
 define("Age", 20);
 echo "My age is " . Age . "<br>";
@@ -110,9 +108,6 @@ for ($i = 1; $i <= 10; $i++) {
         echo "Row $i, Column $j: $i * $j = " . ($i * $j) . "<br>";
     }
 }
-
-
-
 
     ?>
 </body>
