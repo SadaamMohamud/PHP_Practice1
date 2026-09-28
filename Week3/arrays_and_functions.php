@@ -36,6 +36,7 @@
     }
 
 
+    //creating multidimensional array
     $multiArray = array(
         array("Mohamed", 21, "Hodan"),
         array("Ahmed", 22, "Wadajir"),
