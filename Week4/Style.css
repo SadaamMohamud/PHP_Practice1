@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+.register-form {
+    width: 90%;
+    max-width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid black;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-field {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.choice-field {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.choice-field label,
+.terms-field label {
+    display: inline;
+}
+
+.choice-field input,
+.terms-field input {
+    width: auto;
+}
+
+.choice-field label {
+    margin-right: 12px;
+}
+
+button {
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-actions {
+    text-align: center;
+}
+
+.reset-button {
+    background-color: #e76f51;
+    color: white;
+}
+
+.register-button {
+    background-color: #2a9d8f;
+    color: white;
+}
+
+.info-box {
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 350px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #333333;
+    background-color: white;
+    color: black;
+}
+
+.info-box h2 {
+    margin-top: 0;
+}
