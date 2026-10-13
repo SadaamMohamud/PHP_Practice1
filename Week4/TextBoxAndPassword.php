@@ -71,6 +71,8 @@
             echo "<p>Comment: " . $_POST['comment'] . "</p>";
             echo "</div>";
         }
+
+        
         ?>
     </main>
 </body>
