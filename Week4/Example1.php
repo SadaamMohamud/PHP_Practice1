@@ -91,7 +91,6 @@ echo "<br><br>";
 // ===============================
 // GLOBAL VARIABLE
 // ===============================
-
 // This is a global variable
 // It is created outside the function
 $y = 20;
@@ -104,7 +103,6 @@ function globalExample() {
     // Display the global variable
     echo "Global Variable: " .  $y ."<br>";
 }
-
 // Call the function
 globalExample();
 
@@ -125,11 +123,9 @@ function sum2 (){
     $x++;
     echo $x . "<br>";
 }
-
 sum2();
 sum2();
 sum2();
-
 
 ?>
     
