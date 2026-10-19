@@ -607,3 +607,11 @@ These Week 2 screenshots introduce important PHP concepts:
 12. **`print_r()`** — displaying an array in a readable way.
 
 These examples provide a basic introduction to PHP conditions, loops, arrays, constants, and decision-making.
+
+
+
+
+
+
+
+   

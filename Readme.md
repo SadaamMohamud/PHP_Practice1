@@ -341,3 +341,6 @@ Laravel
 ```
 
 The knowledge from this course will provide the foundation for developing dynamic, interactive, and database-driven web applications.
+
+
+

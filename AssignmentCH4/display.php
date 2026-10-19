@@ -3,81 +3,81 @@
 if (isset($_POST['submit'])) {
 
     if (empty($_POST['name'])) {
-        die("Please enter your name.");
+        echo("Please enter your name.");
     }
 
     if (empty($_POST['pob'])) {
-        die("Please enter your place of birth.");
+        echo("Please enter your place of birth.");
     }
 
     if (empty($_POST['dob'])) {
-        die("Please enter your date of birth.");
+        echo("Please enter your date of birth.");
     }
 
     if (empty($_POST['address'])) {
-        die("Please enter your address.");
+        echo("Please enter your address.");
     }
 
     if (empty($_POST['gender'])) {
-        die("Please select your gender.");
+        echo("Please select your gender.");
     }
 
     if (empty($_POST['telephone'])) {
-        die("Please enter your telephone.");
+        echo("Please enter your telephone.");
     }
 
     if (empty($_POST['email'])) {
-        die("Please enter your email.");
+        echo("Please enter your email.");
     }
 
     if (empty($_POST['parent_name'])) {
-        die("Please enter parent name.");
+        echo("Please enter parent name.");
     }
 
     if (empty($_POST['parent_telephone'])) {
-        die("Please enter parent telephone.");
+        echo("Please enter parent telephone.");
     }
 
     if (empty($_POST['relationship'])) {
-        die("Please select relationship.");
+        echo("Please select relationship.");
     }
 
     if (empty($_POST['student_id'])) {
-        die("Please enter student ID.");
+        echo("Please enter student ID.");
     }
 
     if (empty($_POST['faculty'])) {
-        die("Please enter faculty.");
+        echo("Please enter faculty.");
     }
 
     if (empty($_POST['department'])) {
-        die("Please enter department.");
+        echo("Please enter department.");
     }
 
     if (empty($_POST['class'])) {
-        die("Please enter class.");
+        echo("Please enter class.");
     }
 
     if (empty($_POST['registration_date'])) {
-        die("Please enter registration date.");
+        echo("Please enter registration date.");
     }
 
     if (!preg_match("/^[a-zA-Z ]+$/", $_POST['name'])) {
-        die("Name must contain letters and spaces only.");
+        echo("Name must contain letters and spaces only.");
     }
 
     if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
-        die("Please enter a valid email.");
+        echo("Please enter a valid email.");
     }
 
     if (empty($_FILES['image']['name'])) {
-        die("Please upload an image.");
+        echo("Please upload an image.");
     }
 
     $allowed = array("image/jpeg", "image/png", "image/gif");
 
     if (!in_array($_FILES['image']['type'], $allowed)) {
-        die("Only JPG, PNG, and GIF images are allowed.");
+        echo("Only JPG, PNG, and GIF images are allowed.");
     }
 
     if (!is_dir("uploads")) {
@@ -88,7 +88,7 @@ if (isset($_POST['submit'])) {
     $image_path = "uploads/" . $image;
 
     if (!move_uploaded_file($_FILES['image']['tmp_name'], $image_path)) {
-        die("Image upload failed.");
+        echo("Image upload failed.");
     }
 
 } else {
